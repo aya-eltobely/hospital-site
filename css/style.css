@@ -1,0 +1,593 @@
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default if you use "mobile first" */
+/* Small devices (landscape phones, 576px and up) */
+:root {
+    --green: #16A085;
+    --par: #777777;
+    --boxsh : 5px 5px 0 rgba(22, 160, 133, .2);
+    --textsh:2px 2px 0 rgba(127, 125, 125, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/***********************************************************************/
+/***********************************************************************/
+/***********************************************************************/
+/***********************************************************************/
+nav {
+    background-color: #FFF;
+    padding: 10px 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-left h3 {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+nav .nav-left i {
+    color: var(--green);
+}
+
+nav .nav-right .nav-bar {
+    background-color: #E4E4E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+nav .nav-right .nav-bar i {
+    color: var(--green);
+    font-size: 25px;
+}
+nav ul.pc-nav
+{
+    display: none;
+}
+nav ul.mobile-nav {
+    /* display: none; */
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    width: 300px;
+    border: 2px solid var(--green);
+    background-color: #FFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow:var(--boxsh);
+}
+.hide-show-nav
+{
+    display: none;
+}
+nav .nav-right ul.mobile-nav li {
+    margin-bottom: 15px;
+}
+
+nav .nav-right ul.mobile-nav li a {
+    color: var(--par);
+    font-size: 18px;
+}
+nav .nav-right ul.mobile-nav li a:hover {
+    color: var(--green);
+}
+/***********************************************************************/
+
+header {
+    background-color: #F5F5F5;
+    margin: 58px 0;
+    padding-bottom: 50px;
+}
+header article h1
+{
+    font-weight: 700;
+    text-shadow:var(--textsh);
+}
+header article p
+{
+    color: #777777;
+}
+header article a,
+.sec2 figure a,
+.aboutsec article a
+{
+    display: inline-block;
+    border: 1px solid var(--green);
+    color: var(--green);
+    padding: 7px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: var(--boxsh);
+}
+header article a:hover,
+.sec2 figure a:hover,
+.aboutsec article a:hover
+{
+    background-color: var(--green);
+    color: #FFF;
+}
+header article a:hover i,
+.sec2 figure a:hover i,
+.aboutsec article a:hover i
+{
+    background-color: #FFF;
+    color: var(--green);
+    margin-left: 20px;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
+header article a i,
+.sec2 figure a i,
+.aboutsec article a i
+
+
+{
+    background-color: var(--green);
+    color: #FFF;
+    padding: 2px 5px;
+    margin-left: 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+/***********************************************************************/
+.sec1
+{
+    margin-bottom: 50px;
+}
+.sec1 figure
+{
+    border:2px solid var(--green) ;
+    box-shadow: var(--boxsh);
+    width: 300px;
+    text-align: center;
+    padding: 20px 0;
+}
+.sec1 .container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sec1 figure
+{
+    max-width:49% ;
+}
+
+.sec1 figure i,
+.sec2 figure>i
+{
+    color: var(--green);
+    font-size: 35px;
+}
+.sec1 figure h1
+{
+    margin: 10px 0;
+    text-shadow: var(--textsh);
+}
+.sec1 figure p,
+.sec2 figure p
+{
+    color: var(--par);
+}
+/***********************************************************************/
+.sec2 
+{
+    background-color: #F5F5F5;
+    padding-top: 88px;
+    padding-bottom: 30px;
+    /* padding: 30px 0; */
+}
+.sec2 h1
+{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 55px;
+
+}
+.sec2 figure
+{
+    border:2px solid var(--green) ;
+    box-shadow: var(--boxsh);
+    width: 400px;
+    padding: 20px;
+    background-color: #FFF;
+    margin-bottom: 20px;
+}
+.sec2 figure h2
+{
+    margin: 15px 0;
+    font-weight: 600;
+    
+}
+/***********************************************************************/
+.aboutsec 
+{
+    /* padding: 30px 0; */
+    padding-top: 88px;
+    padding-bottom: 30px;
+
+}
+.aboutsec>h1
+{
+    text-align: center;
+    font-size: 55px;
+}
+.aboutsec article h1
+{
+    text-shadow: var(--textsh);
+}
+.aboutsec article p
+{
+    color: var(--par);
+    margin-top: 10px;
+}
+/**********************************************************************/
+
+.docsec
+{
+    background-color: #F5F5F5;
+    /* padding: 30px 0; */
+    padding-top: 88px;
+    padding-bottom: 30px;
+
+}
+.docsec h1,
+.booksec h1
+
+{
+    text-align: center;
+    font-size: 55px;
+}
+.docsec figure
+{
+    border: 2px solid var(--green);
+    box-shadow: var(--boxsh);
+    text-align: center;
+    width: 400px;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+.docsec figure img
+{
+    width: 50%;
+    border: 2px solid var(--green);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.docsec figure h2
+{
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.docsec figure p
+{
+    color: var(--green);
+}
+.docsec figure ul li
+{
+    display: inline-block;
+    margin-right: 25px;
+    border: 2px solid var(--green);
+    width: 40px;
+    height: 40px;
+    padding-top: 6px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.docsec figure ul li a
+{
+    color: var(--green);
+}
+.docsec figure ul li:hover
+{
+    background-color: var(--green);
+}
+.docsec figure ul li:hover a
+{
+    color: #FFF;
+}
+/***********************************************************************/
+.booksec
+{
+    /* padding: 30px 0; */
+    padding-top: 88px;
+    padding-bottom: 30px;
+
+}
+
+.booksec form
+{
+    border: 2px solid var(--green);
+    box-shadow: var(--boxsh);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.booksec form input
+{
+    border: 2px solid var(--green);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.booksec form input[type="submit"]
+{
+    width: 150px;
+    background-color: transparent;
+    color: var(--green);
+    letter-spacing: 1px;
+    box-shadow: var(--boxsh);
+}
+/***********************************************************************/
+
+footer
+{
+    padding: 30px 0;
+    background-color: #F5F5F5;
+}
+footer figure h2
+{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, .7);
+    margin-bottom: 20px;
+}
+footer figure ul li
+{
+    margin-bottom: 15px;
+}
+footer figure ul li a,
+footer figure ul li a:hover
+{
+    color: var(--green);
+}
+footer figure ul li a i
+{
+    margin-right: 7px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+footer figure ul li:hover a i
+{
+    margin-right: 20px;
+
+}
+footer p
+{
+    text-align: center;
+    font-size: 20px;
+    color: rgba(0, 0, 0, .7);
+    font-weight: 500;
+}
+footer p span
+{
+    color: var(--green);
+}
+
+#up
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 2px solid var(--green);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding-top: 5px;
+    cursor: pointer; 
+    display: none;
+}
+
+#up:hover
+{
+    background-color: var(--green);
+}
+#up:hover i
+{
+    color: #FFF;
+}
+#up i
+{
+    color: var(--green);
+    font-size: 18px;
+}
+
+/***********************************************************************/
+/***********************************************************************/
+/***********************************************************************/
+/***********************************************************************/
+
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .sec2 .container
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .sec2 figure
+    {
+        width: 49% ;
+    }
+    .docsec .container
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap
+    }
+    .docsec figure
+    {
+        width: 49% ;
+    }
+
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    nav .nav-right .nav-bar {
+        display: none;
+    }
+
+    nav .nav-right ul.pc-nav {
+        display: flex;
+    }
+
+    nav .nav-right ul.pc-nav li {
+        margin-right: 25px;
+    }
+
+    nav .nav-right ul.pc-nav li a {
+        color: var(--par);
+        font-size: 18px;
+    }
+
+    nav .nav-right ul.pc-nav li a:hover {
+        color: var(--green);
+    }
+
+    header section
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header section figure
+    {
+        width: 49%;
+    }
+    header section article
+    {
+        width: 49%;
+    }
+
+    header article h1
+    {
+        font-size: 50px;
+    }
+    header article p
+    {
+        font-size: 18px;
+        margin: 20px 0;
+
+    }
+    header article a
+    {
+        font-size: 19px;
+    }
+    .sec2 figure
+    {
+        width: 32% ;
+    }
+    .aboutsec .container
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .aboutsec figure,
+    .aboutsec article
+    {
+        width: 49%
+    }
+    .docsec figure
+    {
+        width: 32% ;
+    }
+    .booksec .container
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .booksec figure,
+    .booksec form
+    {
+        width: 49%;
+    }
+    footer section
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer section figure
+    {
+        width: 24%;
+    }
+
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
